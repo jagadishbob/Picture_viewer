@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>picture code</title>
+    <style>
+        body{
+    background-color:rgb(71, 68, 68);
+}
+
+header{
+    text-align: center;
+    color: aliceblue;
+}
+.img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #dfdfdf;
+    padding: 1px;
+    
+}
+
+.center{
+    background-color:blueviolet;
+    padding: 12px;
+    border: 12px;
+    position: center;
+    text-align: center;
+}
+
+.top{
+    background-color:thistle;
+    padding: 12px;
+    border: 12px;
+    position: center;
+    text-align: center;
+}
+.button {
+    background-color: #ab3ba9; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+
+  
+footer{
+    text-align: center;
+    background-color:rgb(71, 68, 68);
+    color: aliceblue;
+}
+
+
+    </style>
+   
+</head>
+<body>
+    <header >
+        <h1>Image Viwer</h1>
+    </header>
+    <div class="center">
+    <img class="img" src='img.png' alt="" /><br>
+    <input class="button" type="file" />
+  </div>  
+  <div class="top">
+    <h1>Code</h1>
+    <P>HTML Code</P>
+    <code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title&gt;picture code&lt;/title&gt;
+            &lt;link rel="stylesheet" href="styles.css"&gt;
+           
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;header&gt;
+                &lt;h1&gt;Image Viwer&lt;/h1&gt;
+            &lt;/header&gt;
+            &lt;div class="center"&gt;
+            &lt;img class="img" src='img.png' alt="" /&gt;&lt;br&gt;
+            &lt;input class="button" type="file" /&gt;
+          &lt;/div&gt;  
+          &lt;div class="top"&gt;
+            &lt;h1&gt;Code&lt;/h1&gt;
+            &lt;P&gt;HTML
+                
+            &lt;/P&gt;
+          &lt;/div&gt;
+          &lt;footer&gt;@copyright jagadish 2023-24&lt;/footer&gt;
+          &lt;script&gt;
+            const image = document.querySelector('img');
+            input = document.querySelector("input");
+        
+            input.addEventListener("change", () =&gt;{
+            image.src = URL.createObjectURL(input.files[0]);
+            });
+        &lt;/script&gt;
+        &lt;/body&gt;
+        &lt;/html&gt</code>
+
+        <P>CSS Code</P>
+        <code>body{
+            background-color:rgb(71, 68, 68);
+        }
+        
+        header{
+            text-align: center;
+            color: aliceblue;
+        }
+        .img{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            background: #dfdfdf;
+            padding: 1px;
+            
+        }
+        
+        .center{
+            background-color:blueviolet;
+            padding: 12px;
+            border: 12px;
+            position: center;
+            text-align: center;
+        }
+        
+        .top{
+            background-color:thistle;
+            padding: 12px;
+            border: 12px;
+            position: center;
+            text-align: center;
+        }
+        .button {
+            background-color: #ab3ba9; /* Green */
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+          }
+        
+        
+          
+        footer{
+            text-align: center;
+        }
+        
+        </code>
+  </div>
+  <footer>@cofferight jagadish 2023-24</footer>
+  <script>
+    const image = document.querySelector('img');
+    input = document.querySelector("input");
+
+    input.addEventListener("change", () =>{
+    image.src = URL.createObjectURL(input.files[0]);
+    });
+</script>
+</body>
+</html>
